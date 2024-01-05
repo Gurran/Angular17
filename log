@@ -1,0 +1,1865 @@
+05 01 2024 12:23:52.497:DEBUG [config]: Loading config /home/gurra/Code/Projects/Angular/Angular17/MyApp/karma.conf.js
+05 01 2024 12:23:52.498:DEBUG [config]: autoWatch set to false, because of singleRun
+05 01 2024 12:23:52.504:DEBUG [karma-server]: Final config Config {
+  LOG_DISABLE: 'OFF',
+  LOG_ERROR: 'ERROR',
+  LOG_WARN: 'WARN',
+  LOG_INFO: 'INFO',
+  LOG_DEBUG: 'DEBUG',
+  frameworks: [ 'jasmine', '@angular-devkit/build-angular' ],
+  protocol: 'http:',
+  port: 9876,
+  listenAddress: '0.0.0.0',
+  hostname: 'localhost',
+  httpsServerConfig: {},
+  basePath: '/home/gurra/Code/Projects/Angular/Angular17/MyApp',
+  files: [],
+  browserConsoleLogOptions: { level: 'debug', format: '%b %T: %m', terminal: true },
+  customContextFile: null,
+  customDebugFile: null,
+  customClientContextFile: null,
+  exclude: [ '/home/gurra/Code/Projects/Angular/Angular17/MyApp/karma.conf.js' ],
+  logLevel: 'debug',
+  colors: true,
+  autoWatch: false,
+  autoWatchBatchDelay: 250,
+  restartOnFileChange: false,
+  usePolling: true,
+  reporters: [ 'progress', 'kjhtml' ],
+  singleRun: true,
+  browsers: [ 'ChromeHeadlessCI' ],
+  captureTimeout: 60000,
+  pingTimeout: 5000,
+  proxies: {},
+  proxyValidateSSL: true,
+  preprocessors: [Object: null prototype] {},
+  preprocessor_priority: {},
+  urlRoot: '/',
+  upstreamProxy: undefined,
+  reportSlowerThan: 0,
+  loggers: [
+    {
+      type: 'console',
+      layout: { type: 'pattern', pattern: '%[%d{DATETIME}:%p [%c]: %]%m' }
+    }
+  ],
+  transports: [ 'polling', 'websocket' ],
+  forceJSONP: false,
+  plugins: [
+    {
+      'framework:jasmine': [
+        'factory',
+        [Function: initJasmine] { '$inject': [ 'config.files' ] }
+      ],
+      'reporter:karma-jasmine': [
+        'factory',
+        [Function: InjectKarmaJasmineReporter] {
+          '$inject': [ 'config.singleRun' ]
+        }
+      ]
+    },
+    {
+      'launcher:Chrome': [
+        'type',
+        [Function: ChromeBrowser] {
+          '$inject': [ 'baseBrowserDecorator', 'args' ]
+        }
+      ],
+      'launcher:ChromeHeadless': [
+        'type',
+        [Function: ChromeHeadlessBrowser] {
+          '$inject': [ 'baseBrowserDecorator', 'args' ]
+        }
+      ],
+      'launcher:ChromeCanary': [
+        'type',
+        [Function: ChromeCanaryBrowser] {
+          '$inject': [ 'baseBrowserDecorator', 'args' ]
+        }
+      ],
+      'launcher:ChromeCanaryHeadless': [
+        'type',
+        [Function: ChromeCanaryHeadlessBrowser] {
+          '$inject': [ 'baseBrowserDecorator', 'args' ]
+        }
+      ],
+      'launcher:Chromium': [
+        'type',
+        [Function: ChromiumBrowser] {
+          '$inject': [ 'baseBrowserDecorator', 'args' ]
+        }
+      ],
+      'launcher:ChromiumHeadless': [ 'type', [Function: ChromiumHeadlessBrowser] ],
+      'launcher:Dartium': [
+        'type',
+        [Function: DartiumBrowser] {
+          '$inject': [ 'baseBrowserDecorator', 'args' ]
+        }
+      ],
+      test: {
+        isJSFlags: [Function: isJSFlags],
+        sanitizeJSFlags: [Function: sanitizeJSFlags],
+        headlessGetOptions: [Function: headlessGetOptions],
+        canaryGetOptions: [Function: canaryGetOptions]
+      }
+    },
+    {
+      'reporter:kjhtml': [
+        'type',
+        [Function: initReporter] {
+          '$inject': [ 'config', 'baseReporterDecorator' ]
+        }
+      ]
+    },
+    {
+      'preprocessor:coverage': [
+        'factory',
+        [Function: createCoveragePreprocessor] {
+          '$inject': [
+            'logger',
+            'config.basePath',
+            'config.reporters',
+            'config.coverageReporter'
+          ]
+        }
+      ],
+      'reporter:coverage': [
+        'type',
+        [Function: CoverageReporter] {
+          '$inject': [ 'config', 'helper', 'logger', 'emitter' ]
+        }
+      ]
+    },
+    {
+      'framework:@angular-devkit/build-angular': [
+        'factory',
+        [Function: init] { '$inject': [ 'config', 'emitter' ] }
+      ],
+      'reporter:@angular-devkit/build-angular--sourcemap-reporter': [
+        'type',
+        [Function: sourceMapReporter] {
+          '$inject': [ 'baseReporterDecorator', 'config' ]
+        }
+      ],
+      'reporter:@angular-devkit/build-angular--event-reporter': [
+        'type',
+        [Function: eventReporter] {
+          '$inject': [ 'baseReporterDecorator', 'config' ]
+        }
+      ],
+      'middleware:@angular-devkit/build-angular--blocker': [ 'factory', [Function: requestBlocker] ],
+      'middleware:@angular-devkit/build-angular--fallback': [ 'factory', [Function: fallbackMiddleware] ]
+    },
+    [Object: null prototype] {
+      'launcher:ChromeHeadlessCI': [ 'factory', [Function (anonymous)] ]
+    }
+  ],
+  client: {
+    args: [],
+    useIframe: true,
+    runInParent: false,
+    captureConsole: true,
+    clearContext: false,
+    allowedReturnUrlPatterns: [ '^https?://' ],
+    jasmine: {}
+  },
+  defaultClient: {
+    args: [],
+    useIframe: true,
+    runInParent: false,
+    captureConsole: true,
+    clearContext: false,
+    allowedReturnUrlPatterns: [ '^https?://' ],
+    jasmine: {}
+  },
+  browserDisconnectTimeout: 2000,
+  browserDisconnectTolerance: 0,
+  browserNoActivityTimeout: 30000,
+  processKillTimeout: 2000,
+  concurrency: Infinity,
+  failOnEmptyTestSuite: true,
+  retryLimit: 2,
+  detached: false,
+  crossOriginAttribute: true,
+  browserSocketTimeout: 20000,
+  buildWebpack: {
+    options: {
+      polyfills: [ 'zone.js', 'zone.js/testing' ],
+      tsConfig: 'tsconfig.spec.json',
+      inlineStyleLanguage: 'scss',
+      assets: [ 'src/favicon.ico', 'src/assets' ],
+      styles: [ 'src/styles.scss' ],
+      scripts: [],
+      karmaConfig: 'karma.conf.js',
+      progress: false,
+      watch: false,
+      codeCoverage: true,
+      browsers: 'ChromeHeadlessCI',
+      main: undefined,
+      stylePreprocessorOptions: { includePaths: [] },
+      include: [ '**/*.spec.ts' ],
+      exclude: [],
+      sourceMap: true,
+      poll: undefined,
+      preserveSymlinks: undefined,
+      codeCoverageExclude: [],
+      fileReplacements: [],
+      reporters: [],
+      webWorkerTsConfig: undefined
+    },
+    webpackConfig: {
+      mode: 'development',
+      devtool: false,
+      target: [ 'web', 'es2015' ],
+      profile: false,
+      resolve: {
+        roots: [ '/home/gurra/Code/Projects/Angular/Angular17/MyApp' ],
+        extensions: [ '.ts', '.tsx', '.mjs', '.js' ],
+        symlinks: true,
+        modules: [
+          '/home/gurra/Code/Projects/Angular/Angular17/MyApp',
+          'node_modules'
+        ],
+        mainFields: [ 'es2020', 'es2015', 'browser', 'module', 'main' ],
+        conditionNames: [ 'es2020', 'es2015', '...' ]
+      },
+      resolveLoader: { symlinks: true },
+      context: '/home/gurra/Code/Projects/Angular/Angular17/MyApp',
+      entry: {
+        polyfills: [ 'zone.js', '@angular/compiler' ],
+        main: [
+          'zone.js/testing',
+          'ng-virtual-main.js!=!data:text/javascript;base64,CiAgaW1wb3J0IHsgZ2V0VGVzdEJlZCB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUvdGVzdGluZyc7CiAgaW1wb3J0IHsKICAgIEJyb3dzZXJEeW5hbWljVGVzdGluZ01vZHVsZSwKICAgIHBsYXRmb3JtQnJvd3NlckR5bmFtaWNUZXN0aW5nLAogICB9IGZyb20gJ0Bhbmd1bGFyL3BsYXRmb3JtLWJyb3dzZXItZHluYW1pYy90ZXN0aW5nJzsKCiAgLy8gSW5pdGlhbGl6ZSB0aGUgQW5ndWxhciB0ZXN0aW5nIGVudmlyb25tZW50LgogIGdldFRlc3RCZWQoKS5pbml0VGVzdEVudmlyb25tZW50KEJyb3dzZXJEeW5hbWljVGVzdGluZ01vZHVsZSwgcGxhdGZvcm1Ccm93c2VyRHluYW1pY1Rlc3RpbmcoKSwgewogICAgZXJyb3JPblVua25vd25FbGVtZW50czogdHJ1ZSwKICAgIGVycm9yT25Vbmtub3duUHJvcGVydGllczogdHJ1ZQogIH0pOwo='
+        ]
+      },
+      externals: [],
+      output: {
+        uniqueName: 'MyApp',
+        hashFunction: 'xxhash64',
+        clean: true,
+        path: '/home/gurra/Code/Projects/Angular/Angular17/MyApp',
+        publicPath: '',
+        filename: '[name].js',
+        chunkFilename: '[name].js',
+        libraryTarget: undefined,
+        crossOriginLoading: false,
+        trustedTypes: 'angular#bundler',
+        scriptType: 'module'
+      },
+      watch: true,
+      watchOptions: { poll: undefined, followSymlinks: false, ignored: undefined },
+      snapshot: { module: { hash: false } },
+      performance: { hints: false },
+      ignoreWarnings: [
+        /Failed to parse source map from/,
+        /Add postcss as project dependency/,
+        /"@charset" must be the first rule in the file/
+      ],
+      module: {
+        strictExportPresence: true,
+        parser: {
+          javascript: { requireContext: false, url: false, worker: false }
+        },
+        rules: [
+          {
+            test: /\.?(svg|html)$/,
+            resourceQuery: /\?ngResource/,
+            type: 'asset/source'
+          },
+          { test: /[/\\]rxjs[/\\]add[/\\].+\.js$/, sideEffects: true },
+          {
+            test: /\.[cm]?[tj]sx?$/,
+            resolve: { fullySpecified: false },
+            exclude: [
+              /[\\/]node_modules[/\\](?:core-js|@babel|tslib|web-animations-js|web-streams-polyfill|whatwg-url)[/\\]/
+            ],
+            use: [
+              {
+                loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js',
+                options: {
+                  cacheDirectory: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/.angular/cache/17.0.9/babel-webpack',
+                  aot: false,
+                  optimize: false,
+                  supportedBrowsers: [
+                    'chrome 120',
+                    'chrome 119',
+                    'edge 120',
+                    'edge 119',
+                    'firefox 121',
+                    'firefox 115',
+                    'ios_saf 17.2',
+                    'ios_saf 17.1',
+                    'ios_saf 17.0',
+                    'ios_saf 16.6-16.7',
+                    'ios_saf 16.5',
+                    'ios_saf 16.4',
+                    'ios_saf 16.3',
+                    'ios_saf 16.2',
+                    'ios_saf 16.1',
+                    'ios_saf 16.0',
+                    'safari 17.2',
+                    'safari 17.1',
+                    'safari 17.0',
+                    'safari 16.6',
+                    'safari 16.5',
+                    'safari 16.4',
+                    'safari 16.3',
+                    'safari 16.2',
+                    'safari 16.1',
+                    'safari 16.0'
+                  ],
+                  instrumentCode: {
+                    includedBasePath: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src',
+                    excludedPaths: Set(0) {}
+                  }
+                }
+              }
+            ]
+          },
+          {
+            test: /\.[cm]?jsx?$/,
+            enforce: 'pre',
+            loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/source-map-loader/dist/cjs.js',
+            options: {
+              filterSourceMappingUrl: [Function: filterSourceMappingUrl]
+            }
+          },
+          {
+            test: /\.[cm]?tsx?$/,
+            loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@ngtools/webpack/src/ivy/index.js',
+            exclude: [
+              /[\\/]node_modules[/\\](?:css-loader|mini-css-extract-plugin|webpack-dev-server|webpack)[/\\]/
+            ]
+          },
+          {
+            test: /\.(?:css)$/i,
+            rules: [
+              {
+                oneOf: [
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/mini-css-extract-plugin/dist/loader.js'
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false },
+                          sourceMap: true
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngGlobalStyle/
+                  },
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1,
+                          exportType: 'string',
+                          esModule: false
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false }
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngResource/
+                  }
+                ]
+              },
+              { use: [] }
+            ]
+          },
+          {
+            test: /\.(?:scss)$/i,
+            rules: [
+              {
+                oneOf: [
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/mini-css-extract-plugin/dist/loader.js'
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false },
+                          sourceMap: true
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngGlobalStyle/
+                  },
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1,
+                          exportType: 'string',
+                          esModule: false
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false }
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngResource/
+                  }
+                ]
+              },
+              {
+                use: [
+                  {
+                    loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/resolve-url-loader/index.js',
+                    options: { sourceMap: true }
+                  },
+                  {
+                    loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/sass-loader/dist/cjs.js',
+                    options: {
+                      sourceMap: true,
+                      api: 'modern',
+                      implementation: SassWorkerImplementation {
+                        rebase: false,
+                        workers: [],
+                        availableWorkers: [],
+                        requests: Map(0) {},
+                        workerPath: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/sass/worker.js',
+                        idCounter: 1,
+                        nextWorkerIndex: 0
+                      },
+                      webpackImporter: false,
+                      sassOptions: [Function: sassOptions]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            test: /\.(?:sass)$/i,
+            rules: [
+              {
+                oneOf: [
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/mini-css-extract-plugin/dist/loader.js'
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false },
+                          sourceMap: true
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngGlobalStyle/
+                  },
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1,
+                          exportType: 'string',
+                          esModule: false
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false }
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngResource/
+                  }
+                ]
+              },
+              {
+                use: [
+                  {
+                    loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/resolve-url-loader/index.js',
+                    options: { sourceMap: true }
+                  },
+                  {
+                    loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/sass-loader/dist/cjs.js',
+                    options: {
+                      sourceMap: true,
+                      api: 'modern',
+                      implementation: SassWorkerImplementation {
+                        rebase: false,
+                        workers: [],
+                        availableWorkers: [],
+                        requests: Map(0) {},
+                        workerPath: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/sass/worker.js',
+                        idCounter: 1,
+                        nextWorkerIndex: 0
+                      },
+                      webpackImporter: false,
+                      sassOptions: [Function: sassOptions]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            test: /\.(?:less)$/i,
+            rules: [
+              {
+                oneOf: [
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/mini-css-extract-plugin/dist/loader.js'
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false },
+                          sourceMap: true
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngGlobalStyle/
+                  },
+                  {
+                    use: [
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/css-loader/dist/cjs.js',
+                        options: {
+                          url: false,
+                          sourceMap: true,
+                          importLoaders: 1,
+                          exportType: 'string',
+                          esModule: false
+                        }
+                      },
+                      {
+                        loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/postcss-loader/dist/cjs.js',
+                        options: {
+                          implementation: <ref *18> [Function: postcss] {
+                            plugin: [Function: plugin],
+                            stringify: <ref *1> [Function: stringify] {
+                              default: [Circular *1]
+                            },
+                            parse: <ref *2> [Function: parse] {
+                              default: [Circular *2]
+                            },
+                            fromJSON: <ref *3> [Function: fromJSON] {
+                              default: [Circular *3]
+                            },
+                            list: <ref *4> {
+                              comma: [Function: comma],
+                              space: [Function: space],
+                              split: [Function: split],
+                              default: [Circular *4]
+                            },
+                            comment: [Function (anonymous)],
+                            atRule: [Function (anonymous)],
+                            decl: [Function (anonymous)],
+                            rule: [Function (anonymous)],
+                            root: [Function (anonymous)],
+                            document: [Function (anonymous)],
+                            CssSyntaxError: <ref *5> [class CssSyntaxError extends Error] {
+                              default: [Circular *5]
+                            },
+                            Declaration: <ref *6> [class Declaration extends Node] {
+                              default: [Circular *6]
+                            },
+                            Container: <ref *7> [class Container extends Node] {
+                              registerParse: [Function (anonymous)],
+                              registerRule: [Function (anonymous)],
+                              registerAtRule: [Function (anonymous)],
+                              registerRoot: [Function (anonymous)],
+                              default: [Circular *7],
+                              rebuild: [Function (anonymous)]
+                            },
+                            Processor: <ref *8> [class Processor] {
+                              default: [Circular *8]
+                            },
+                            Document: <ref *9> [class Document extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *9]
+                            },
+                            Comment: <ref *10> [class Comment extends Node] {
+                              default: [Circular *10]
+                            },
+                            Warning: <ref *11> [class Warning] {
+                              default: [Circular *11]
+                            },
+                            AtRule: <ref *12> [class AtRule extends Container] {
+                              default: [Circular *12]
+                            },
+                            Result: <ref *13> [class Result] {
+                              default: [Circular *13]
+                            },
+                            Input: <ref *14> [class Input] {
+                              default: [Circular *14]
+                            },
+                            Rule: <ref *15> [class Rule extends Container] {
+                              default: [Circular *15]
+                            },
+                            Root: <ref *16> [class Root extends Container] {
+                              registerLazyResult: [Function (anonymous)],
+                              registerProcessor: [Function (anonymous)],
+                              default: [Circular *16]
+                            },
+                            Node: <ref *17> [class Node] {
+                              default: [Circular *17]
+                            },
+                            default: [Circular *18]
+                          },
+                          postcssOptions: [Function: optionGenerator] { config: false }
+                        }
+                      }
+                    ],
+                    resourceQuery: /\?ngResource/
+                  }
+                ]
+              },
+              {
+                use: [
+                  {
+                    loader: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/less-loader/dist/cjs.js',
+                    options: {
+                      implementation: {
+                        node: [Function (anonymous)],
+                        color: [Function (anonymous)],
+                        atrule: [Function (anonymous)],
+                        detachedruleset: [Function (anonymous)],
+                        operation: [Function (anonymous)],
+                        dimension: [Function (anonymous)],
+                        unit: [Function (anonymous)],
+                        keyword: [Function (anonymous)],
+                        variable: [Function (anonymous)],
+                        property: [Function (anonymous)],
+                        ruleset: [Function (anonymous)],
+                        element: [Function (anonymous)],
+                        attribute: [Function (anonymous)],
+                        combinator: [Function (anonymous)],
+                        selector: [Function (anonymous)],
+                        quoted: [Function (anonymous)],
+                        expression: [Function (anonymous)],
+                        declaration: [Function (anonymous)],
+                        call: [Function (anonymous)],
+                        url: [Function (anonymous)],
+                        import: [Function (anonymous)],
+                        comment: [Function (anonymous)],
+                        anonymous: [Function (anonymous)],
+                        value: [Function (anonymous)],
+                        javascript: [Function (anonymous)],
+                        assignment: [Function (anonymous)],
+                        condition: [Function (anonymous)],
+                        paren: [Function (anonymous)],
+                        media: [Function (anonymous)],
+                        container: [Function (anonymous)],
+                        queryinparens: [Function (anonymous)],
+                        unicodedescriptor: [Function (anonymous)],
+                        negative: [Function (anonymous)],
+                        extend: [Function (anonymous)],
+                        variablecall: [Function (anonymous)],
+                        namespacevalue: [Function (anonymous)],
+                        mixin: [Object: null prototype] {
+                          call: [Function (anonymous)],
+                          definition: [Function (anonymous)]
+                        },
+                        createFromEnvironment: [Function: default_1],
+                        lesscHelper: {
+                          stylize: [Function: stylize],
+                          printUsage: [Function: printUsage]
+                        },
+                        PluginLoader: [Function: PluginLoader],
+                        fs: {
+                          appendFile: [Function: appendFile],
+                          appendFileSync: [Function: appendFileSync],
+                          access: [Function: access],
+                          accessSync: [Function: accessSync],
+                          chown: [Function (anonymous)],
+                          chownSync: [Function (anonymous)],
+                          chmod: [Function (anonymous)],
+                          chmodSync: [Function (anonymous)],
+                          close: [Function: close],
+                          closeSync: [Function: closeSync],
+                          copyFile: [Function: copyFile],
+                          copyFileSync: [Function: copyFileSync],
+                          cp: [Function: cp],
+                          cpSync: [Function: cpSync],
+                          createReadStream: [Function: createReadStream],
+                          createWriteStream: [Function: createWriteStream],
+                          exists: [Function: exists],
+                          existsSync: [Function: existsSync],
+                          fchown: [Function (anonymous)],
+                          fchownSync: [Function (anonymous)],
+                          fchmod: [Function (anonymous)],
+                          fchmodSync: [Function (anonymous)],
+                          fdatasync: [Function: fdatasync],
+                          fdatasyncSync: [Function: fdatasyncSync],
+                          fstat: [Function (anonymous)],
+                          fstatSync: [Function (anonymous)],
+                          fsync: [Function: fsync],
+                          fsyncSync: [Function: fsyncSync],
+                          ftruncate: [Function: ftruncate],
+                          ftruncateSync: [Function: ftruncateSync],
+                          futimes: [Function: futimes],
+                          futimesSync: [Function: futimesSync],
+                          lchown: [Function (anonymous)],
+                          lchownSync: [Function (anonymous)],
+                          lchmod: [Function (anonymous)],
+                          lchmodSync: [Function (anonymous)],
+                          link: [Function: link],
+                          linkSync: [Function: linkSync],
+                          lstat: [Function (anonymous)],
+                          lstatSync: [Function (anonymous)],
+                          lutimes: [Function: lutimes],
+                          lutimesSync: [Function: lutimesSync],
+                          mkdir: [Function: mkdir],
+                          mkdirSync: [Function: mkdirSync],
+                          mkdtemp: [Function: mkdtemp],
+                          mkdtempSync: [Function: mkdtempSync],
+                          open: [Function: open],
+                          openSync: [Function: openSync],
+                          opendir: [Function: opendir],
+                          opendirSync: [Function: opendirSync],
+                          readdir: [Function: readdir],
+                          readdirSync: [Function: readdirSync],
+                          read: [Function: read],
+                          readSync: [Function (anonymous)],
+                          readv: [Function: readv],
+                          readvSync: [Function: readvSync],
+                          readFile: [Function: readFile],
+                          readFileSync: [Function: readFileSync],
+                          readlink: [Function: readlink],
+                          readlinkSync: [Function: readlinkSync],
+                          realpath: [Function: realpath] {
+                            native: [Function (anonymous)]
+                          },
+                          realpathSync: [Function: realpathSync] {
+                            native: [Function (anonymous)]
+                          },
+                          rename: [Function: rename],
+                          renameSync: [Function: renameSync],
+                          rm: [Function: rm],
+                          rmSync: [Function: rmSync],
+                          rmdir: [Function: rmdir],
+                          rmdirSync: [Function: rmdirSync],
+                          stat: [Function (anonymous)],
+                          statfs: [Function: statfs],
+                          statSync: [Function (anonymous)],
+                          statfsSync: [Function: statfsSync],
+                          symlink: [Function: symlink],
+                          symlinkSync: [Function: symlinkSync],
+                          truncate: [Function: truncate],
+                          truncateSync: [Function: truncateSync],
+                          unwatchFile: [Function: unwatchFile],
+                          unlink: [Function: unlink],
+                          unlinkSync: [Function: unlinkSync],
+                          utimes: [Function: utimes],
+                          utimesSync: [Function: utimesSync],
+                          watch: [Function: watch],
+                          watchFile: [Function: watchFile],
+                          writeFile: [Function: writeFile],
+                          writeFileSync: [Function: writeFileSync],
+                          write: [Function: write],
+                          writeSync: [Function: writeSync],
+                          writev: [Function: writev],
+                          writevSync: [Function: writevSync],
+                          Dir: [class Dir],
+                          Dirent: [class Dirent],
+                          Stats: [Function: Stats],
+                          ReadStream: [Getter/Setter],
+                          WriteStream: [Getter/Setter],
+                          FileReadStream: [Getter/Setter],
+                          FileWriteStream: [Getter/Setter],
+                          _toUnixTimestamp: [Function: toUnixTimestamp],
+                          F_OK: 0,
+                          R_OK: 4,
+                          W_OK: 2,
+                          X_OK: 1,
+                          constants: [Object: null prototype] {
+                            UV_FS_SYMLINK_DIR: 1,
+                            UV_FS_SYMLINK_JUNCTION: 2,
+                            O_RDONLY: 0,
+                            O_WRONLY: 1,
+                            O_RDWR: 2,
+                            UV_DIRENT_UNKNOWN: 0,
+                            UV_DIRENT_FILE: 1,
+                            UV_DIRENT_DIR: 2,
+                            UV_DIRENT_LINK: 3,
+                            UV_DIRENT_FIFO: 4,
+                            UV_DIRENT_SOCKET: 5,
+                            UV_DIRENT_CHAR: 6,
+                            UV_DIRENT_BLOCK: 7,
+                            S_IFMT: 61440,
+                            S_IFREG: 32768,
+                            S_IFDIR: 16384,
+                            S_IFCHR: 8192,
+                            S_IFBLK: 24576,
+                            S_IFIFO: 4096,
+                            S_IFLNK: 40960,
+                            S_IFSOCK: 49152,
+                            O_CREAT: 64,
+                            O_EXCL: 128,
+                            UV_FS_O_FILEMAP: 0,
+                            O_NOCTTY: 256,
+                            O_TRUNC: 512,
+                            O_APPEND: 1024,
+                            O_DIRECTORY: 65536,
+                            O_NOATIME: 262144,
+                            O_NOFOLLOW: 131072,
+                            O_SYNC: 1052672,
+                            O_DSYNC: 4096,
+                            O_DIRECT: 16384,
+                            O_NONBLOCK: 2048,
+                            S_IRWXU: 448,
+                            S_IRUSR: 256,
+                            S_IWUSR: 128,
+                            S_IXUSR: 64,
+                            S_IRWXG: 56,
+                            S_IRGRP: 32,
+                            S_IWGRP: 16,
+                            S_IXGRP: 8,
+                            S_IRWXO: 7,
+                            S_IROTH: 4,
+                            S_IWOTH: 2,
+                            S_IXOTH: 1,
+                            F_OK: 0,
+                            R_OK: 4,
+                            W_OK: 2,
+                            X_OK: 1,
+                            UV_FS_COPYFILE_EXCL: 1,
+                            COPYFILE_EXCL: 1,
+                            UV_FS_COPYFILE_FICLONE: 2,
+                            COPYFILE_FICLONE: 2,
+                            UV_FS_COPYFILE_FICLONE_FORCE: 4,
+                            COPYFILE_FICLONE_FORCE: 4
+                          },
+                          promises: [Getter],
+                          gracefulify: [Function: patch]
+                        },
+                        FileManager: [Function: FileManager],
+                        UrlFileManager: [Function: UrlFileManager],
+                        options: {
+                          javascriptEnabled: false,
+                          depends: false,
+                          compress: false,
+                          lint: false,
+                          paths: [],
+                          color: true,
+                          strictImports: false,
+                          insecure: false,
+                          rootpath: '',
+                          rewriteUrls: false,
+                          math: 1,
+                          strictUnits: false,
+                          globalVars: null,
+                          modifyVars: null,
+                          urlArgs: ''
+                        }
+                      },
+                      sourceMap: true,
+                      lessOptions: { javascriptEnabled: true, paths: [] }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      experiments: {
+        backCompat: false,
+        syncWebAssembly: true,
+        asyncWebAssembly: true,
+        topLevelAwait: false
+      },
+      infrastructureLogging: { debug: undefined, level: 'error' },
+      stats: {
+        all: false,
+        colors: true,
+        hash: true,
+        timings: true,
+        chunks: true,
+        builtAt: true,
+        warnings: true,
+        errors: true,
+        assets: true,
+        cachedAssets: true,
+        ids: true,
+        entrypoints: true
+      },
+      cache: {
+        type: 'filesystem',
+        profile: undefined,
+        cacheDirectory: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/.angular/cache/17.0.9/angular-webpack',
+        maxMemoryGenerations: 1,
+        name: '003113642dfaf7490f2ff52adbf57bd77eb1e211'
+      },
+      optimization: {
+        minimizer: [],
+        moduleIds: 'deterministic',
+        chunkIds: 'named',
+        emitOnErrors: false,
+        runtimeChunk: 'single',
+        splitChunks: {
+          maxAsyncRequests: Infinity,
+          cacheGroups: {
+            default: false,
+            common: false,
+            vendors: false,
+            defaultVendors: {
+              name: 'vendor',
+              chunks: [Function: chunks],
+              enforce: true,
+              test: /[\\/]node_modules[\\/]/
+            }
+          }
+        }
+      },
+      plugins: [
+        NamedChunksPlugin {},
+        OccurrencesPlugin {
+          options: { aot: false, scriptsOptimization: false }
+        },
+        DedupeModuleResolvePlugin {
+          options: { verbose: undefined },
+          modules: Map(0) {}
+        },
+        CopyPlugin {
+          patterns: [
+            {
+              context: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/',
+              to: '',
+              from: 'favicon.ico',
+              noErrorOnMissing: true,
+              force: true,
+              globOptions: {
+                dot: true,
+                followSymbolicLinks: false,
+                ignore: [
+                  '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/.gitkeep',
+                  '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/**/.DS_Store',
+                  '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/**/Thumbs.db'
+                ]
+              },
+              priority: 0
+            },
+            {
+              context: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/assets/',
+              to: 'assets/',
+              from: '**/*',
+              noErrorOnMissing: true,
+              force: true,
+              globOptions: {
+                dot: true,
+                followSymbolicLinks: false,
+                ignore: [
+                  '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/assets/.gitkeep',
+                  '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/assets/**/.DS_Store',
+                  '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src/assets/**/Thumbs.db'
+                ]
+              },
+              priority: 1
+            }
+          ],
+          options: {}
+        },
+        DevToolsIgnorePlugin {},
+        SourceMapDevToolPlugin {
+          sourceMapFilename: '[file].map',
+          sourceMappingURLComment: '\n//# sourceMappingURL=[url]',
+          moduleFilenameTemplate: '[resource-path]',
+          fallbackModuleFilenameTemplate: 'webpack://[namespace]/[resourcePath]?[hash]',
+          namespace: '',
+          options: {
+            filename: '[file].map',
+            include: [ /js$/, /css$/ ],
+            sourceRoot: 'webpack:///',
+            moduleFilenameTemplate: '[resource-path]',
+            append: undefined
+          }
+        },
+        AngularWebpackPlugin {
+          pluginOptions: {
+            emitClassMetadata: false,
+            emitNgModuleScope: true,
+            jitMode: true,
+            fileReplacements: {},
+            substitutions: {},
+            directTemplateLoading: true,
+            tsconfig: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/tsconfig.spec.json',
+            compilerOptions: {
+              sourceMap: true,
+              declaration: false,
+              declarationMap: false,
+              preserveSymlinks: false
+            },
+            inlineStyleFileExtension: 'scss'
+          },
+          compilerCliModule: undefined,
+          watchMode: undefined,
+          ngtscNextProgram: undefined,
+          builder: undefined,
+          sourceFileCache: undefined,
+          webpackCache: undefined,
+          webpackCreateHash: undefined,
+          fileDependencies: Map(0) {},
+          requiredFilesToEmit: Set(0) {},
+          requiredFilesToEmitCache: Map(0) {},
+          fileEmitHistory: Map(0) {}
+        },
+        AnyComponentStyleBudgetChecker { budgets: [] },
+        StylesWebpackPlugin {
+          options: {
+            root: '/home/gurra/Code/Projects/Angular/Angular17/MyApp',
+            entryPoints: { styles: [ 'src/styles.scss' ] },
+            preserveSymlinks: false
+          },
+          compilation: undefined
+        },
+        { apply: [Function: apply] },
+        MiniCssExtractPlugin {
+          _sortedModulesCache: WeakMap { <items unknown> },
+          options: {
+            filename: '[name].css',
+            ignoreOrder: false,
+            experimentalUseImportModule: undefined,
+            runtime: true,
+            chunkFilename: '[name].css'
+          },
+          runtimeOptions: {
+            insert: undefined,
+            linkType: 'text/css',
+            attributes: undefined
+          }
+        },
+        SuppressExtractedTextChunksWebpackPlugin {},
+        FindTestsPlugin {
+          options: {
+            include: [ '**/*.spec.ts' ],
+            exclude: [],
+            workspaceRoot: '/home/gurra/Code/Projects/Angular/Angular17/MyApp',
+            projectSourceRoot: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/src'
+          },
+          compilation: undefined
+        }
+      ],
+      node: false
+    },
+    logger: Logger {
+      name: 'MyApp:test:',
+      parent: null,
+      _subject: Subject {
+        closed: false,
+        currentObservers: null,
+        observers: [
+          <ref *19> SafeSubscriber {
+            initialTeardown: undefined,
+            closed: false,
+            _parentage: null,
+            _finalizers: [
+              Subscription {
+                initialTeardown: [Function (anonymous)],
+                closed: false,
+                _parentage: [Circular *19],
+                _finalizers: null
+              }
+            ],
+            isStopped: false,
+            destination: ConsumerObserver {
+              partialObserver: {
+                next: [Function (anonymous)],
+                error: undefined,
+                complete: undefined
+              }
+            }
+          },
+          <ref *20> SafeSubscriber {
+            initialTeardown: undefined,
+            closed: false,
+            _parentage: null,
+            _finalizers: [
+              Subscription {
+                initialTeardown: [Function (anonymous)],
+                closed: false,
+                _parentage: [Circular *20],
+                _finalizers: null
+              }
+            ],
+            isStopped: false,
+            destination: ConsumerObserver {
+              partialObserver: {
+                next: undefined,
+                error: undefined,
+                complete: [Function (anonymous)]
+              }
+            }
+          }
+        ],
+        isStopped: false,
+        hasError: false,
+        thrownError: null
+      },
+      _metadata: { name: 'MyApp:test:', path: [] },
+      _obs: Observable {
+        source: Subject {
+          closed: false,
+          currentObservers: null,
+          observers: [
+            <ref *19> SafeSubscriber {
+              initialTeardown: undefined,
+              closed: false,
+              _parentage: null,
+              _finalizers: [
+                Subscription {
+                  initialTeardown: [Function (anonymous)],
+                  closed: false,
+                  _parentage: [Circular *19],
+                  _finalizers: null
+                }
+              ],
+              isStopped: false,
+              destination: ConsumerObserver {
+                partialObserver: {
+                  next: [Function (anonymous)],
+                  error: undefined,
+                  complete: undefined
+                }
+              }
+            },
+            <ref *20> SafeSubscriber {
+              initialTeardown: undefined,
+              closed: false,
+              _parentage: null,
+              _finalizers: [
+                Subscription {
+                  initialTeardown: [Function (anonymous)],
+                  closed: false,
+                  _parentage: [Circular *20],
+                  _finalizers: null
+                }
+              ],
+              isStopped: false,
+              destination: ConsumerObserver {
+                partialObserver: {
+                  next: undefined,
+                  error: undefined,
+                  complete: [Function (anonymous)]
+                }
+              }
+            }
+          ],
+          isStopped: false,
+          hasError: false,
+          thrownError: null
+        }
+      },
+      _subscription: null
+    },
+    failureCb: [Function (anonymous)],
+    successCb: [Function (anonymous)]
+  },
+  jasmineHtmlReporter: { suppressAll: true },
+  coverageReporter: {
+    dir: '/home/gurra/Code/Projects/Angular/Angular17/MyApp/coverage/my-app',
+    subdir: '.',
+    reporters: [ { type: 'html' }, { type: 'text-summary' } ]
+  },
+  customLaunchers: {
+    ChromeHeadlessCI: { base: 'ChromeHeadless', flags: [ '--no-sandbox' ] }
+  },
+  watch: false
+}
+05 01 2024 12:23:52.505:DEBUG [plugin]: Loading inline plugin defining framework:jasmine, reporter:karma-jasmine.
+05 01 2024 12:23:52.505:DEBUG [plugin]: Loading inline plugin defining launcher:Chrome, launcher:ChromeHeadless, launcher:ChromeCanary, launcher:ChromeCanaryHeadless, launcher:Chromium, launcher:ChromiumHeadless, launcher:Dartium, test.
+05 01 2024 12:23:52.505:DEBUG [plugin]: Loading inline plugin defining reporter:kjhtml.
+05 01 2024 12:23:52.505:DEBUG [plugin]: Loading inline plugin defining preprocessor:coverage, reporter:coverage.
+05 01 2024 12:23:52.505:DEBUG [plugin]: Loading inline plugin defining framework:@angular-devkit/build-angular, reporter:@angular-devkit/build-angular--sourcemap-reporter, reporter:@angular-devkit/build-angular--event-reporter, middleware:@angular-devkit/build-angular--blocker, middleware:@angular-devkit/build-angular--fallback.
+05 01 2024 12:23:52.505:DEBUG [plugin]: Loading inline plugin defining launcher:ChromeHeadlessCI.
+05 01 2024 12:23:54.947:DEBUG [web-server]: Instantiating middleware
+05 01 2024 12:23:54.948:DEBUG [reporter]: Trying to load reporter: @angular-devkit/build-angular--event-reporter
+05 01 2024 12:23:54.949:DEBUG [reporter]: Trying to load color-version of reporter: @angular-devkit/build-angular--event-reporter (@angular-devkit/build-angular--event-reporter_color)
+05 01 2024 12:23:54.949:DEBUG [reporter]: Couldn't load color-version.
+05 01 2024 12:23:54.949:DEBUG [reporter]: Trying to load reporter: @angular-devkit/build-angular--sourcemap-reporter
+05 01 2024 12:23:54.949:DEBUG [reporter]: Trying to load color-version of reporter: @angular-devkit/build-angular--sourcemap-reporter (@angular-devkit/build-angular--sourcemap-reporter_color)
+05 01 2024 12:23:54.949:DEBUG [reporter]: Couldn't load color-version.
+05 01 2024 12:23:54.951:DEBUG [reporter]: Trying to load reporter: kjhtml
+05 01 2024 12:23:54.952:DEBUG [reporter]: Trying to load color-version of reporter: kjhtml (kjhtml_color)
+05 01 2024 12:23:54.952:DEBUG [reporter]: Couldn't load color-version.
+05 01 2024 12:23:54.952:DEBUG [reporter]: Trying to load reporter: coverage
+05 01 2024 12:23:54.952:DEBUG [reporter]: Trying to load color-version of reporter: coverage (coverage_color)
+05 01 2024 12:23:54.952:DEBUG [reporter]: Couldn't load color-version.
+05 01 2024 12:23:54.959:INFO [karma-server]: Karma v6.4.2 server started at http://localhost:9876/
+05 01 2024 12:23:54.959:INFO [launcher]: Launching browsers ChromeHeadlessCI with concurrency unlimited
+05 01 2024 12:23:54.961:INFO [launcher]: Starting browser ChromeHeadless
+05 01 2024 12:23:54.962:DEBUG [launcher]: null -> BEING_CAPTURED
+05 01 2024 12:23:54.962:DEBUG [temp-dir]: Creating temp dir at /tmp/karma-58224224
+05 01 2024 12:23:54.962:DEBUG [launcher]: /var/lib/flatpak/exports/bin/com.google.Chrome --user-data-dir=/tmp/karma-58224224 --enable-automation --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-translate --disable-background-timer-throttling --disable-renderer-backgrounding --disable-device-discovery-notifications --no-sandbox http://localhost:9876/?id=58224224 --headless --disable-gpu --disable-dev-shm-usage --remote-debugging-port=9222
+05 01 2024 12:23:55.186:DEBUG [web-server]: serving: /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma/static/client.html
+05 01 2024 12:23:55.193:DEBUG [web-server]: serving: /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma/static/karma.js
+05 01 2024 12:23:55.205:DEBUG [karma-server]: A browser has connected on socket pw4aUlprsERmCUXYAAAB
+05 01 2024 12:23:55.217:DEBUG [Chrome Headless 120.0.6099.129 (Linux x86_64)]: undefined -> CONNECTED
+05 01 2024 12:23:55.217:INFO [Chrome Headless 120.0.6099.129 (Linux x86_64)]: Connected on socket pw4aUlprsERmCUXYAAAB with id 58224224
+05 01 2024 12:23:55.218:DEBUG [launcher]: BEING_CAPTURED -> CAPTURED
+05 01 2024 12:23:55.218:DEBUG [launcher]: ChromeHeadless (id 58224224) captured in 0.259 secs
+05 01 2024 12:23:55.218:DEBUG [Chrome Headless 120.0.6099.129 (Linux x86_64)]: CONNECTED -> CONFIGURING
+05 01 2024 12:23:55.218:DEBUG [web-server]: upgrade /socket.io/?EIO=4&transport=websocket&sid=A2kM2tSvdTzMugHQAAAA
+05 01 2024 12:23:55.225:DEBUG [middleware:karma]: custom files /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/webpack/plugins/karma/karma-context.html /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/webpack/plugins/karma/karma-debug.html null
+05 01 2024 12:23:55.225:DEBUG [middleware:karma]: Serving customContextFile /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/webpack/plugins/karma/karma-context.html
+05 01 2024 12:23:55.226:DEBUG [web-server]: serving: /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/@angular-devkit/build-angular/src/tools/webpack/plugins/karma/karma-context.html
+05 01 2024 12:23:55.232:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/styles.css
+05 01 2024 12:23:55.232:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/styles.css
+05 01 2024 12:23:55.234:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/runtime.js
+05 01 2024 12:23:55.234:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/runtime.js
+05 01 2024 12:23:55.235:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/polyfills.js
+05 01 2024 12:23:55.235:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/polyfills.js
+05 01 2024 12:23:55.236:DEBUG [middleware:source-files]: Requesting /base/node_modules/jasmine-core/lib/jasmine-core/jasmine.css?e53589f1c4007ab3f9769cf314a8fff850343bd0
+05 01 2024 12:23:55.236:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/jasmine-core/lib/jasmine-core/jasmine.css
+05 01 2024 12:23:55.236:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/jasmine-core/lib/jasmine-core/jasmine.css
+05 01 2024 12:23:55.237:DEBUG [middleware:source-files]: Requesting /base/node_modules/karma-source-map-support/lib/client.js?fcb459e84379f1ce8e91fe200d87463f3780ca1b
+05 01 2024 12:23:55.237:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-source-map-support/lib/client.js
+05 01 2024 12:23:55.237:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-source-map-support/lib/client.js
+05 01 2024 12:23:55.237:DEBUG [middleware:source-files]: Requesting /base/node_modules/source-map-support/browser-source-map-support.js?d396c5c772d39dd251c37919a75f287e2244d0a2
+05 01 2024 12:23:55.237:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/source-map-support/browser-source-map-support.js
+05 01 2024 12:23:55.237:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/source-map-support/browser-source-map-support.js
+05 01 2024 12:23:55.238:DEBUG [middleware:source-files]: Requesting /base/node_modules/karma-jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js?4d3d165a31f4a0cfbea94aa42ec76e0330a3121f
+05 01 2024 12:23:55.238:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js
+05 01 2024 12:23:55.238:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js
+05 01 2024 12:23:55.239:DEBUG [middleware:source-files]: Requesting /base/node_modules/karma-jasmine/lib/boot.js?760d54bbca4f739f1f8b252c1636d76201cc4e88
+05 01 2024 12:23:55.239:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine/lib/boot.js
+05 01 2024 12:23:55.239:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine/lib/boot.js
+05 01 2024 12:23:55.239:DEBUG [middleware:source-files]: Requesting /base/node_modules/karma-jasmine/lib/adapter.js?db55991565c0f0381ab0fb3c340df5194b4bef99
+05 01 2024 12:23:55.239:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine/lib/adapter.js
+05 01 2024 12:23:55.239:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine/lib/adapter.js
+05 01 2024 12:23:55.240:DEBUG [web-server]: serving: /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma/static/context.js
+05 01 2024 12:23:55.241:DEBUG [middleware:source-files]: Requesting /base/node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js?2bdc0f0d7a608a0e36c95dfa2e66650c798babf7
+05 01 2024 12:23:55.241:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js
+05 01 2024 12:23:55.241:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js
+05 01 2024 12:23:55.241:DEBUG [middleware:source-files]: Requesting /base/node_modules/jasmine-core/lib/jasmine-core/boot0.js?1906a1ec61e6680cae4219e72afd270f0125e3d0
+05 01 2024 12:23:55.242:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/jasmine-core/lib/jasmine-core/boot0.js
+05 01 2024 12:23:55.242:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/jasmine-core/lib/jasmine-core/boot0.js
+05 01 2024 12:23:55.242:DEBUG [middleware:source-files]: Requesting /base/node_modules/karma-jasmine-html-reporter/src/boot.js?dbf98583336a2363c3a6f9bf6cb1a1627caffb7a
+05 01 2024 12:23:55.242:DEBUG [middleware:source-files]: Fetching /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine-html-reporter/src/boot.js
+05 01 2024 12:23:55.242:DEBUG [web-server]: serving (cached): /home/gurra/Code/Projects/Angular/Angular17/MyApp/node_modules/karma-jasmine-html-reporter/src/boot.js
+05 01 2024 12:23:55.242:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/vendor.js
+05 01 2024 12:23:55.242:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/vendor.js
+05 01 2024 12:23:55.244:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/scripts.js
+05 01 2024 12:23:55.244:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/scripts.js
+05 01 2024 12:23:55.245:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/main.js
+05 01 2024 12:23:55.245:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/main.js
+05 01 2024 12:23:55.334:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/main.js
+05 01 2024 12:23:55.334:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/main.js
+05 01 2024 12:23:55.336:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/main.js
+05 01 2024 12:23:55.336:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/main.js
+05 01 2024 12:23:55.338:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/main.js.map
+05 01 2024 12:23:55.338:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/main.js.map
+05 01 2024 12:23:55.341:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/runtime.js
+05 01 2024 12:23:55.341:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/runtime.js
+05 01 2024 12:23:55.342:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/runtime.js
+05 01 2024 12:23:55.342:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/runtime.js
+05 01 2024 12:23:55.344:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/runtime.js.map
+05 01 2024 12:23:55.344:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/runtime.js.map
+05 01 2024 12:23:55.350:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/vendor.js
+05 01 2024 12:23:55.350:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/vendor.js
+05 01 2024 12:23:55.360:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/vendor.js
+05 01 2024 12:23:55.360:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/vendor.js
+05 01 2024 12:23:55.376:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/vendor.js.map
+05 01 2024 12:23:55.376:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/vendor.js.map
+05 01 2024 12:23:55.833:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/polyfills.js
+05 01 2024 12:23:55.833:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/polyfills.js
+05 01 2024 12:23:55.837:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/polyfills.js
+05 01 2024 12:23:55.837:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/polyfills.js
+05 01 2024 12:23:55.844:DEBUG [middleware:source-files]: Requesting /_karma_webpack_/polyfills.js.map
+05 01 2024 12:23:55.844:DEBUG [middleware:source-files]: Fetching /_karma_webpack_/polyfills.js.map
+05 01 2024 12:23:56.035:DEBUG [Chrome Headless 120.0.6099.129 (Linux x86_64)]: CONFIGURING -> EXECUTING
+Chrome Headless 120.0.6099.129 (Linux x86_64): Executed 0 of 3[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome Headless 120.0.6099.129 (Linux x86_64): Executed 1 of 3[32m SUCCESS[39m (0 secs / 0.047 secs)
+[1A[2KChrome Headless 120.0.6099.129 (Linux x86_64): Executed 2 of 3[32m SUCCESS[39m (0 secs / 0.05 secs)
+[1A[2KChrome Headless 120.0.6099.129 (Linux x86_64): Executed 3 of 3[32m SUCCESS[39m (0 secs / 0.055 secs)
+05 01 2024 12:23:56.099:DEBUG [Chrome Headless 120.0.6099.129 (Linux x86_64)]: EXECUTING -> CONNECTED
+[1A[2KChrome Headless 120.0.6099.129 (Linux x86_64): Executed 3 of 3[32m SUCCESS[39m (0.064 secs / 0.055 secs)
+05 01 2024 12:23:56.100:DEBUG [launcher]: CAPTURED -> BEING_KILLED
+05 01 2024 12:23:56.100:DEBUG [launcher]: BEING_KILLED -> BEING_FORCE_KILLED
+05 01 2024 12:23:56.100:DEBUG [Chrome Headless 120.0.6099.129 (Linux x86_64)]: CONNECTED -> DISCONNECTED
+[32mTOTAL: 3 SUCCESS[39m
+05 01 2024 12:23:56.101:DEBUG [karma-server]: Run complete, exiting.
+05 01 2024 12:23:56.101:DEBUG [launcher]: Disconnecting all browsers
+05 01 2024 12:23:56.101:DEBUG [launcher]: BEING_FORCE_KILLED -> BEING_FORCE_KILLED
+05 01 2024 12:23:56.102:DEBUG [proxy]: Destroying proxy agents
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 3/3 )
+Branches     : 100% ( 0/0 )
+Functions    : 100% ( 1/1 )
+Lines        : 100% ( 2/2 )
+================================================================================
+05 01 2024 12:23:56.112:DEBUG [launcher]: Process ChromeHeadless exited with code null and signal SIGTERM
+05 01 2024 12:23:56.112:DEBUG [temp-dir]: Cleaning temp dir /tmp/karma-58224224
+05 01 2024 12:23:56.113:DEBUG [coverage]: Writing coverage to /home/gurra/Code/Projects/Angular/Angular17/MyApp/coverage/my-app
+05 01 2024 12:23:56.117:DEBUG [launcher]: Finished all browsers
+05 01 2024 12:23:56.117:DEBUG [launcher]: BEING_FORCE_KILLED -> FINISHED
+05 01 2024 12:23:56.117:DEBUG [launcher]: FINISHED -> FINISHED
+05 01 2024 12:23:59.590:DEBUG [karma-server]: Received stop event, exiting.
+05 01 2024 12:23:59.590:DEBUG [launcher]: Disconnecting all browsers
+05 01 2024 12:23:59.590:DEBUG [launcher]: FINISHED -> BEING_FORCE_KILLED
+05 01 2024 12:23:59.590:DEBUG [proxy]: Destroying proxy agents
